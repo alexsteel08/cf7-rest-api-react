@@ -12,7 +12,7 @@ const MessageForm = () => {
 
     try {
       const response = await axios.post(
-        'https://react.test-area.pp.ua/wp-json/contact-form-7/v1/contact-forms/154/feedback',
+        'https://domain.com/wp-json/contact-form-7/v1/contact-forms/{form_id}/feedback',
         {
           yourname: name,
           youremail: email,
